@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QMessageBox
+from PyQt5.QtWidgets import *
 
 def dialog():
    mbox = QMessageBox()
@@ -10,12 +10,17 @@ def dialog():
          
    mbox.exec_()
 
+def __init__(self):
+   self.setWindow
+
 if __name__ == "__main__":
    app = QApplication(sys.argv)
    w = QWidget()
    w.resize(300,300)
    w.setWindowTitle("House Manager")
-   
+
+   scroll = QScrollBar()
+
    label = QLabel(w)
    label.setText("Behold the Guru, Guru99")
    label.move(100,130)
