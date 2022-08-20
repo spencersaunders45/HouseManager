@@ -1,5 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
+from widgets.project_list import Widgets
+
 
 def dialog():
    mbox = QMessageBox()
@@ -32,6 +34,11 @@ if __name__ == "__main__":
    btn.show()
    btn.clicked.connect(dialog)
 
-   
+   Widgets.projects(w)
+
+   # label2 = Widgets.average_time()
+   # label2.move(200, 150)
+   # label2.show()
+
    w.show()
    sys.exit(app.exec_())
